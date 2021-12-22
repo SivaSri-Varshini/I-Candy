@@ -56,6 +56,7 @@ function HomeScreen({ navigation, route }) {
         {!(listing == null || listing == undefined || listing.length == 0) ? (
           <FlatList
             data={categories}
+            showsVerticalScrollIndicator={false}
             keyExtractor={({ index, item }) =>
               index +
               new Date().getTime().toString() +
